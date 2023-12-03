@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DF49A2B-AEC4-4DBC-9DB8-089E3BFBD920}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetoFinalDesktop2</RootNamespace>
+    <AssemblyName>ProjetoFinalDesktop2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEditarTabelaFipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditarTabelaFipe.Designer.cs">
+      <DependentUpon>AddEditarTabelaFipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditarModelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditarModelos.Designer.cs">
+      <DependentUpon>AddEditarModelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarMarcas.Designer.cs">
+      <DependentUpon>CadastrarMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarModelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarModelos.Designer.cs">
+      <DependentUpon>CadastrarModelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroTabelaFIPE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroTabelaFIPE.Designer.cs">
+      <DependentUpon>CadastroTabelaFIPE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditarMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditarMarcas.Designer.cs">
+      <DependentUpon>AddEditarMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaClientesEApolices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaClientesEApolices.Designer.cs">
+      <DependentUpon>ListaClientesEApolices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuADM.Designer.cs">
+      <DependentUpon>MenuADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CorretoraDataSet.cs">
+      <DependentUpon>CorretoraDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CorretoraDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CorretoraDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCliente.Designer.cs">
+      <DependentUpon>MenuCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroCliente.Designer.cs">
+      <DependentUpon>CadastroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioADM.Designer.cs">
+      <DependentUpon>FormularioADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioCliente.Designer.cs">
+      <DependentUpon>FormularioCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservas.Designer.cs">
+      <DependentUpon>reservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simulacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simulacao.Designer.cs">
+      <DependentUpon>Simulacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimulacaoApolice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimulacaoApolice.Designer.cs">
+      <DependentUpon>SimulacaoApolice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddEditarModelos.resx">
+      <DependentUpon>AddEditarModelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditarTabelaFipe.resx">
+      <DependentUpon>AddEditarTabelaFipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarMarcas.resx">
+      <DependentUpon>CadastrarMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarModelos.resx">
+      <DependentUpon>CadastrarModelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroTabelaFIPE.resx">
+      <DependentUpon>CadastroTabelaFIPE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditarMarcas.resx">
+      <DependentUpon>AddEditarMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaClientesEApolices.resx">
+      <DependentUpon>ListaClientesEApolices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuADM.resx">
+      <DependentUpon>MenuADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCliente.resx">
+      <DependentUpon>MenuCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroCliente.resx">
+      <DependentUpon>CadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservas.resx">
+      <DependentUpon>reservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simulacao.resx">
+      <DependentUpon>Simulacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimulacaoApolice.resx">
+      <DependentUpon>SimulacaoApolice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioADM.resx">
+      <DependentUpon>FormularioADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioCliente.resx">
+      <DependentUpon>FormularioCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="CorretoraDataSet.xsc">
+      <DependentUpon>CorretoraDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CorretoraDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CorretoraDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CorretoraDataSet.xss">
+      <DependentUpon>CorretoraDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protecao.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
